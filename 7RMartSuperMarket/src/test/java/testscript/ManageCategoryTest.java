@@ -1,0 +1,38 @@
+package testscript;
+
+import java.awt.AWTException;
+import java.io.IOException;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import Pages.LoginPage;
+import Pages.ManageCategoryPage;
+import Pages.ManageContactPage;
+import utilities.ExcelUtility;
+import utilities.FileUploadUtility;
+
+public class ManageCategoryTest extends Base {
+	
+	@Test(retryAnalyzer=retry.Retry.class)
+	public void verifyWhetherUserIsAbleToUploadFileOnCategoryPage() throws IOException, AWTException
+	{
+		String usernamevalue = ExcelUtility.getStringData(1, 0, "loginpage");
+		String passwordvalue = ExcelUtility.getStringData(1, 1, "loginpage");
+		LoginPage loginpage = new LoginPage(driver);
+		loginpage.enterUserName(usernamevalue);
+		loginpage.enterPassword(passwordvalue);
+		loginpage.signIn();
+		ManageCategoryPage managecategory = new ManageCategoryPage(driver);
+		managecategory.categoryMoreinfo();
+		managecategory.newbutton();
+		String fruitpic = ExcelUtility.getStringData(1, 0, "category");
+		managecategory.category(fruitpic);
+		managecategory.organic();
+		managecategory.choosefile();
+		managecategory.save();
+        boolean alert=managecategory.isAlertDisplayed();
+        Assert.assertTrue(alert);
+}
+	
+}
