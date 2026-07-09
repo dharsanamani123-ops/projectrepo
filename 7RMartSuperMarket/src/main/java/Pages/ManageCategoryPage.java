@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import constant.Constant;
 import utilities.FileUploadUtility;
 import utilities.PageUtility;
+import utilities.WaitUtility;
 
 public class ManageCategoryPage {
 	public WebDriver driver;
@@ -44,6 +45,10 @@ public class ManageCategoryPage {
 	}
 
 	public void organic() {
+		WaitUtility wait = new WaitUtility();
+		wait.waitForElementToBeClickable(driver, organic);
+		PageUtility utility=new PageUtility();
+		utility.scrollIntoElement(organic, driver);
 		organic.click();
 	}
 public void choosefile() {
@@ -51,9 +56,10 @@ public void choosefile() {
 fileupload.fileUploadUsingSendKeys(Constant.APPLEIMG, choosefile);
 }
 public void save() {
-	PageUtility obj = new PageUtility();
-	obj.click(save, driver);
-}
+PageUtility utility =new PageUtility();
+utility.click(save, driver);
+utility.scrollIntoElement(save, driver);
+	}
 public boolean isAlertDisplayed() {
 	return alert.isDisplayed();
 	

@@ -68,6 +68,11 @@ public class PageUtility {
 
 	    // Scroll to the bottom of the page
 	    js.executeScript("window.scrollBy(0, arguments[0]);", scrollHeight);
+	   
+	}
+	public void scrollIntoElement(WebElement elementname,WebDriver driver) {
+		JavascriptExecutor js =(JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView();",elementname);
 	}
 
 }
