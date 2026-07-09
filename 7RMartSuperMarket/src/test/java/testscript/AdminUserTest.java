@@ -10,11 +10,11 @@ import org.testng.annotations.Test;
 import Pages.AdminUsersPage;
 import Pages.LoginPage;
 import utilities.ExcelUtility;
+import utilities.FakerUtility;
 
+public class AdminUserTest extends Base {
 
-public class AdminUserTest extends Base{
-
-	@Test(retryAnalyzer=retry.Retry.class)
+	@Test(retryAnalyzer = retry.Retry.class,groups= {"Regression"})
 	public void verifyWhetherUserIsAbleToSaveInformationsOnAdminUser() throws IOException {
 		String usernamevalue = ExcelUtility.getStringData(1, 0, "loginpage");
 		String passwordvalue = ExcelUtility.getStringData(1, 1, "loginpage");
@@ -25,14 +25,16 @@ public class AdminUserTest extends Base{
 		AdminUsersPage adminuserpage = new AdminUsersPage(driver);
 		adminuserpage.clickAdminMoreInfo();
 		adminuserpage.clickNewButton();
-		String adminusername=ExcelUtility.getStringData(1, 0, "adminuser");
-		String adminPassword=ExcelUtility.getStringData(1, 1, "adminuser");
-		String usertype=ExcelUtility.getStringData(1, 2,"adminuser");
+		FakerUtility faker = new FakerUtility();
+		String adminusername = faker.creatARandomFirstName();
+		// String adminusername=ExcelUtility.getStringData(1, 0, "adminuser");
+		String adminPassword = ExcelUtility.getStringData(1, 1, "adminuser");
+		String usertype = ExcelUtility.getStringData(1, 2, "adminuser");
 		adminuserpage.username(adminusername);
 		adminuserpage.password(adminPassword);
 		adminuserpage.selectUserType(usertype);
 		adminuserpage.save();
-		boolean alertpage=adminuserpage.isAlertDisplayed();
+		boolean alertpage = adminuserpage.isAlertDisplayed();
 		Assert.assertTrue(alertpage);
-}
+	}
 }

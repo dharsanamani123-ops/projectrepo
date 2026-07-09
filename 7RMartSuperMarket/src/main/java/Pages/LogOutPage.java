@@ -11,7 +11,8 @@ public class LogOutPage {
 	WebElement admin;
 	@FindBy(xpath = "//a[@class='dropdown-item' and @href='https://groceryapp.uniqassosiates.com/admin/logout']")
 	WebElement logout;
-	@FindBy(xpath="//button[@type='submit']")WebElement signin;
+	@FindBy(xpath = "//button[@type='submit']")
+	WebElement signin;
 
 	public LogOutPage(WebDriver driver) {
 		this.driver = driver;
@@ -25,8 +26,9 @@ public class LogOutPage {
 	public void clickLogoutButton() {
 		logout.click();
 	}
+
 	public boolean isSigninDisplayed() {
 		return signin.isDisplayed();
-		
+
 	}
 }

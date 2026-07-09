@@ -9,7 +9,7 @@ import Pages.LoginPage;
 import utilities.ExcelUtility;
 
 public class LoginTest extends Base {
-	@Test(retryAnalyzer = retry.Retry.class)
+	@Test(retryAnalyzer = retry.Retry.class,groups= {"Regression"})
 	public void verifyTheUserIsAbleToLoginUsingValidCredentials() throws IOException {
 		String usernamevalue = ExcelUtility.getStringData(1, 0, "loginpage");
 		String passwordvalue = ExcelUtility.getStringData(1, 1, "loginpage");
@@ -19,10 +19,9 @@ public class LoginTest extends Base {
 		loginpage.signIn();
 		boolean homepage = loginpage.isDashBoardDisplayed();
 		Assert.assertTrue(homepage);
-
 	}
 
-	 @Test(retryAnalyzer=retry.Retry.class)
+	 @Test(retryAnalyzer=retry.Retry.class,groups= {"Regression"})
 	public void verifyWhetherUserIsAbleToLoginUsingCorrectUsernameAndIncorrectPassword() throws IOException {
 		String usernamevalue = ExcelUtility.getStringData(2, 0, "loginpage");
 		String passwordvalue = ExcelUtility.getStringData(2, 1, "loginpage");
@@ -34,7 +33,7 @@ public class LoginTest extends Base {
 		Assert.assertTrue(alert);
 	}
 
-	 @Test(retryAnalyzer=retry.Retry.class)
+	 @Test(retryAnalyzer=retry.Retry.class,groups= {"Regression"})
 	public void verifyWhetherUserIsAbleToLoginUsingIncorrectUsernameAndcorrectPassword() throws IOException {
 		String usernamevalue = ExcelUtility.getStringData(3, 0, "loginpage");
 		String passwordvalue = ExcelUtility.getStringData(3, 1, "loginpage");
@@ -46,7 +45,7 @@ public class LoginTest extends Base {
 		Assert.assertTrue(alert);
 	}
 
-    @Test(retryAnalyzer=retry.Retry.class)
+    @Test(retryAnalyzer=retry.Retry.class,groups= {"Regression"})
 	public void verifyWhetherUserIsAbleToLoginUsingInvalidCredentials() throws IOException {
 		String usernamevalue = ExcelUtility.getStringData(4, 0, "loginpage");
 		String passwordvalue = ExcelUtility.getStringData(4, 1, "loginpage");
