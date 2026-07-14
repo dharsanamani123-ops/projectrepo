@@ -47,23 +47,26 @@ public class ManageCategoryPage {
 	public void organic() {
 		WaitUtility wait = new WaitUtility();
 		wait.waitForElementToBeClickable(driver, organic);
-		PageUtility utility=new PageUtility();
+		PageUtility utility = new PageUtility();
 		utility.scrollIntoElement(organic, driver);
 		organic.click();
 	}
-public void choosefile() {
-	FileUploadUtility fileupload=new FileUploadUtility();
-fileupload.fileUploadUsingSendKeys(Constant.APPLEIMG, choosefile);
-}
-public void save() {
-PageUtility utility =new PageUtility();
-utility.click(save, driver);
-utility.scrollIntoElement(save, driver);
+
+	public void choosefile() {
+		FileUploadUtility fileupload = new FileUploadUtility();
+		fileupload.fileUploadUsingSendKeys(Constant.APPLEIMG, choosefile);
 	}
-public boolean isAlertDisplayed() {
-	return alert.isDisplayed();
-	
-}
+
+	public void save() {
+		PageUtility utility = new PageUtility();
+		utility.click(save, driver);
+		utility.scrollIntoElement(save, driver);
+	}
+
+	public boolean isAlertDisplayed() {
+		return alert.isDisplayed();
+
+	}
 }
 
 
