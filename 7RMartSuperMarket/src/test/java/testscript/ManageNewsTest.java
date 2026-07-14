@@ -8,7 +8,7 @@ import Pages.ManageNewsPage;
 import utilities.ExcelUtility;
 
 public class ManageNewsTest extends Base {
-	@Test(retryAnalyzer = retry.Retry.class,groups= {"Regression"})
+	@Test(retryAnalyzer = retry.Retry.class,groups= {"Regression"},description="Verify that the system saves the news details successfully when valid data is entered and the Save button is clicked")
 	public void verifyWhetherUserIsAbleToSave() throws IOException {
 		String usernamevalue = ExcelUtility.getStringData(1, 0, "loginpage");
 		String passwordvalue = ExcelUtility.getStringData(1, 1, "loginpage");

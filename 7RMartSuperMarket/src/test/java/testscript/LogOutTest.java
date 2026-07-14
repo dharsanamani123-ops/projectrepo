@@ -6,7 +6,7 @@ import Pages.LogOutPage;
 import Pages.LoginPage;
 
 public class LogOutTest extends Base {
-	@Test(retryAnalyzer=retry.Retry.class,groups= {"Regression"})
+	@Test(retryAnalyzer=retry.Retry.class,groups= {"Regression"},description="verify user is able to logout from the page, when logout button is clicked")
 	public void verifyUserCanLogoutSuccessfullyFromDashBoard() {
 		String usernamevalue = "admin";
 		String passwordvalue = "admin";

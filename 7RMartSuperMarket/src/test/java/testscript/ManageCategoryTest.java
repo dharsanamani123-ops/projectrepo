@@ -10,7 +10,7 @@ import utilities.ExcelUtility;
 import utilities.FakerUtility;
 
 public class ManageCategoryTest extends Base {
-	@Test(retryAnalyzer = retry.Retry.class,groups= {"Regression"})
+	@Test(retryAnalyzer = retry.Retry.class,groups= {"Regression"},description="Verify that the user is able to upload file successfully when the Save button is clicked")
 	public void verifyWhetherUserIsAbleToUploadFileOnCategoryPage() throws IOException, AWTException {
 		String usernamevalue = ExcelUtility.getStringData(1, 0, "loginpage");
 		String passwordvalue = ExcelUtility.getStringData(1, 1, "loginpage");

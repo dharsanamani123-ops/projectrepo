@@ -9,7 +9,7 @@ import utilities.ExcelUtility;
 import utilities.FakerUtility;
 
 public class ManageLocationTest extends Base {
-	@Test(retryAnalyzer = retry.Retry.class,groups= {"Regression"})
+	@Test(retryAnalyzer = retry.Retry.class,groups= {"Regression"},description="Verify that the user is able to enterlocation details successfully when valid data is entered")
 	public void verifyWhetherUserIsAbleToEnterLocationInformations() throws IOException {
 		String usernamevalue = ExcelUtility.getStringData(1, 0, "loginpage");
 		String passwordvalue = ExcelUtility.getStringData(1, 1, "loginpage");

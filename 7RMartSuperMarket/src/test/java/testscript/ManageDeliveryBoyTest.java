@@ -8,7 +8,7 @@ import Pages.ManageDeliveryBoyPage;
 import utilities.ExcelUtility;
 import utilities.FakerUtility;
 public class ManageDeliveryBoyTest extends Base {
-		@Test(retryAnalyzer = retry.Retry.class,groups= {"Regression"})
+		@Test(retryAnalyzer = retry.Retry.class,groups= {"Regression"},description="Verify that the user is able to saves the deliveryboy details successfully when valid data is entered and the Save button is clicked")
 		public void verifyWhetherUserIsAbleToAddDeliveryBoyList() throws IOException {
 			String usernamevalue = ExcelUtility.getStringData(1, 0, "loginpage");
 			String passwordvalue = ExcelUtility.getStringData(1, 1, "loginpage");
