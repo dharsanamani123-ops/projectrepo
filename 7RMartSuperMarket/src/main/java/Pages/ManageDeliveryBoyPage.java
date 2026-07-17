@@ -9,8 +9,8 @@ import utilities.PageUtility;
 
 public class ManageDeliveryBoyPage {
 	public WebDriver driver;
-	@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/list-deliveryboy' and @class='small-box-footer']")
-	WebElement deliveryBoyMoreInfo;
+	/*@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/list-deliveryboy' and @class='small-box-footer']")
+	WebElement deliveryBoyMoreInfo;*/
 	@FindBy(xpath = "//a[@onclick='click_button(1)']")
 	WebElement newbutton;
 	@FindBy(xpath = "//input[@id='name']")
@@ -35,41 +35,49 @@ public class ManageDeliveryBoyPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void deliveryBoyMoreInfo() {
+	/*public void deliveryBoyMoreInfo() {
 		deliveryBoyMoreInfo.click();
-	}
+	}*/
 
-	public void newButton() {
+	public  ManageDeliveryBoyPage newButton() {
 		newbutton.click();
+		return this;
 	}
 
-	public void name(String names) {
+	public ManageDeliveryBoyPage name(String names) {
 		name.sendKeys(names);
+		return this;
 	}
 
-	public void emails(String emails) {
+	public ManageDeliveryBoyPage emails(String emails) {
 		email.sendKeys(emails);
+		return this;
 	}
 
-	public void phones(int phones) {
+	public ManageDeliveryBoyPage phones(int phones) {
 		phone.sendKeys(String.valueOf(phones));
+		return this;
 	}
 
-	public void address(String addresses) {
+	public ManageDeliveryBoyPage address(String addresses) {
 		address.sendKeys(addresses);
+		return this;
 	}
 
-	public void username(String usernames) {
+	public ManageDeliveryBoyPage username(String usernames) {
 		username.sendKeys(usernames);
+		return this;
 	}
 
-	public void password(String passwords) {
+	public ManageDeliveryBoyPage password(String passwords) {
 		password.sendKeys(passwords);
+		return this;
 	}
 
-	public void save() {
+	public ManageDeliveryBoyPage save() {
 		PageUtility obj = new PageUtility();
 		obj.click(save, driver);
+		return this;
 	}
 
 	public boolean isAlertDisplayed() {

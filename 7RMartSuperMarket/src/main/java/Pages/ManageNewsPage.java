@@ -10,8 +10,8 @@ import utilities.WaitUtility;
 
 public class ManageNewsPage {
 	public WebDriver driver;
-	@FindBy(xpath = ("//a[@href='https://groceryapp.uniqassosiates.com/admin/list-news' and @class='small-box-footer']"))
-	WebElement moreinfo;
+	/*@FindBy(xpath = ("//a[@href='https://groceryapp.uniqassosiates.com/admin/list-news' and @class='small-box-footer']"))
+	WebElement newsmoreinfo;*/
 	@FindBy(xpath = "//a[@onclick='click_button(1)']")
 	WebElement newbutton;
 	@FindBy(xpath = "//textarea[@id='news']")
@@ -26,23 +26,26 @@ public class ManageNewsPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void newsMoreinfo() {
+	/*public void newsMoreinfo() {
 		PageUtility obj = new PageUtility();
-		obj.click(moreinfo, driver);
-	}
+		obj.click(newsmoreinfo, driver);
+	}*/
 
-	public void newbutton() {
+	public ManageNewsPage newbutton() {
 		WaitUtility utility = new WaitUtility();
 		utility.waitForElementToBeClickable(driver, newbutton);
 		newbutton.click();
+		return this;
 	}
 
-	public void news(String newsoffer) {
+	public ManageNewsPage news(String newsoffer) {
 		news.sendKeys(newsoffer);
+		return this;
 	}
 
-	public void save() {
+	public ManageNewsPage save() {
 		save.click();
+		return this;
 	}
 
 	public boolean isAlertIsDisplayed() {

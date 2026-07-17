@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">11 methods,  1 skipped,  10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.ManageCategoryTest" class="method navigator-link" hash-for-method="verifyWhetherUserIsAbleToUploadFileOnCategoryPage">verifyWhetherUserIsAbleToUploadFileOnCategoryPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +117,52 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.LoginTest" class="method navigator-link" hash-for-method="verifyTheUserIsAbleToLoginUsingValidCredentials">verifyTheUserIsAbleToLoginUsingValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.LogOutTest" class="method navigator-link" hash-for-method="verifyUserCanLogoutSuccessfullyFromDashBoard">verifyUserCanLogoutSuccessfullyFromDashBoard</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.ManageDeliveryBoyTest" class="method navigator-link" hash-for-method="verifyWhetherUserIsAbleToAddDeliveryBoyList">verifyWhetherUserIsAbleToAddDeliveryBoyList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.ManageLocationTest" class="method navigator-link" hash-for-method="verifyWhetherUserIsAbleToEnterLocationInformations">verifyWhetherUserIsAbleToEnterLocationInformations</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.LoginTest" class="method navigator-link" hash-for-method="verifyWhetherUserIsAbleToLoginUsingCorrectUsernameAndIncorrectPassword">verifyWhetherUserIsAbleToLoginUsingCorrectUsernameAndIncorrectPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.LoginTest" class="method navigator-link" hash-for-method="verifyWhetherUserIsAbleToLoginUsingIncorrectUsernameAndcorrectPassword">verifyWhetherUserIsAbleToLoginUsingIncorrectUsernameAndcorrectPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.LoginTest" class="method navigator-link" hash-for-method="verifyWhetherUserIsAbleToLoginUsingInvalidCredentials">verifyWhetherUserIsAbleToLoginUsingInvalidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testscript.ManageNewsTest" class="method navigator-link" hash-for-method="verifyWhetherUserIsAbleToSave">verifyWhetherUserIsAbleToSave</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.AdminUserTest" class="method navigator-link" hash-for-method="verifyWhetherUserIsAbleToSaveInformationsOnAdminUser">verifyWhetherUserIsAbleToSaveInformationsOnAdminUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.ManageCategoryTest" class="method navigator-link" hash-for-method="verifyWhetherUserIsAbleToUploadFileOnCategoryPage">verifyWhetherUserIsAbleToUploadFileOnCategoryPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -118,6 +177,129 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testscript.ManageCategoryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyWhetherUserIsAbleToUploadFileOnCategoryPage">
+                  </a> <!-- verifyWhetherUserIsAbleToUploadFileOnCategoryPage -->
+                  <span class="method-name">verifyWhetherUserIsAbleToUploadFileOnCategoryPage</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;alert alert-success alert-dismissible&apos;]&quot;}
+  (Session info: chrome=150.0.7871.116)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0d72622de2fbdfc859ab94351302ea19, findElement {using=xpath, value=//div[@class=&apos;alert alert-success alert-dismissible&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.116, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\sudhe\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54050}, goog:processID: 11092, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54050/devtoo..., se:cdpVersion: 150.0.7871.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0d72622de2fbdfc859ab94351302ea19
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
+	at Pages.ManageCategoryPage.isAlertDisplayed(ManageCategoryPage.java:72)
+	at testscript.ManageCategoryTest.verifyWhetherUserIsAbleToUploadFileOnCategoryPage(ManageCategoryTest.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify that the user is able to upload file successfully when the Save button is clicked)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscript.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTheUserIsAbleToLoginUsingValidCredentials">
+                  </a> <!-- verifyTheUserIsAbleToLoginUsingValidCredentials -->
+                  <span class="method-name">verifyTheUserIsAbleToLoginUsingValidCredentials</span>
+                  <em>
+(Test case for logging in with valid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyWhetherUserIsAbleToLoginUsingCorrectUsernameAndIncorrectPassword">
+                  </a> <!-- verifyWhetherUserIsAbleToLoginUsingCorrectUsernameAndIncorrectPassword -->
+                  <span class="method-name">verifyWhetherUserIsAbleToLoginUsingCorrectUsernameAndIncorrectPassword</span>
+                  <em>
+(Test case for logging in with invalid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyWhetherUserIsAbleToLoginUsingIncorrectUsernameAndcorrectPassword">
+                  </a> <!-- verifyWhetherUserIsAbleToLoginUsingIncorrectUsernameAndcorrectPassword -->
+                  <span class="method-name">verifyWhetherUserIsAbleToLoginUsingIncorrectUsernameAndcorrectPassword</span>
+                  <em>
+(Test case for logging in with invalid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyWhetherUserIsAbleToLoginUsingInvalidCredentials">
+                  </a> <!-- verifyWhetherUserIsAbleToLoginUsingInvalidCredentials -->
+                  <span class="method-name">verifyWhetherUserIsAbleToLoginUsingInvalidCredentials</span>
+                  <em>
+(Test case for logging in with invalid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscript.LogOutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserCanLogoutSuccessfullyFromDashBoard">
+                  </a> <!-- verifyUserCanLogoutSuccessfullyFromDashBoard -->
+                  <span class="method-name">verifyUserCanLogoutSuccessfullyFromDashBoard</span>
+                  <em>
+(verify user is able to logout from the page, when logout button is clicked)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscript.AdminUserTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyWhetherUserIsAbleToSaveInformationsOnAdminUser">
+                  </a> <!-- verifyWhetherUserIsAbleToSaveInformationsOnAdminUser -->
+                  <span class="method-name">verifyWhetherUserIsAbleToSaveInformationsOnAdminUser</span>
+                  <em>
+(Verify that the user is able to saves the admin user details successfully when valid data is entered and the Save button is clicked)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -131,6 +313,57 @@
                   <span class="method-name">verifyWhetherUserIsAbleToSave</span>
                   <em>
 (Verify that the system saves the news details successfully when valid data is entered and the Save button is clicked)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscript.ManageLocationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyWhetherUserIsAbleToEnterLocationInformations">
+                  </a> <!-- verifyWhetherUserIsAbleToEnterLocationInformations -->
+                  <span class="method-name">verifyWhetherUserIsAbleToEnterLocationInformations</span>
+                  <em>
+(Verify that the user is able to enterlocation details successfully when valid data is entered)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscript.ManageCategoryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyWhetherUserIsAbleToUploadFileOnCategoryPage">
+                  </a> <!-- verifyWhetherUserIsAbleToUploadFileOnCategoryPage -->
+                  <span class="method-name">verifyWhetherUserIsAbleToUploadFileOnCategoryPage</span>
+                  <em>
+(Verify that the user is able to upload file successfully when the Save button is clicked)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscript.ManageDeliveryBoyTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyWhetherUserIsAbleToAddDeliveryBoyList">
+                  </a> <!-- verifyWhetherUserIsAbleToAddDeliveryBoyList -->
+                  <span class="method-name">verifyWhetherUserIsAbleToAddDeliveryBoyList</span>
+                  <em>
+(Verify that the user is able to saves the deliveryboy details successfully when valid data is entered and the Save button is clicked)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -151,6 +384,12 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;testscript.LoginTest&quot;/&gt;
+      &lt;class name=&quot;testscript.LogOutTest&quot;/&gt;
+      &lt;class name=&quot;testscript.ManageCategoryTest&quot;/&gt;
+      &lt;class name=&quot;testscript.ManageDeliveryBoyTest&quot;/&gt;
+      &lt;class name=&quot;testscript.ManageLocationTest&quot;/&gt;
+      &lt;class name=&quot;testscript.AdminUserTest&quot;/&gt;
       &lt;class name=&quot;testscript.ManageNewsTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
@@ -165,7 +404,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test (7 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -179,7 +418,43 @@
               <span class="test-group-name">Regression</span>
               <br/>
               <div class="method-in-group">
+                <span class="method-in-group-name">verifyTheUserIsAbleToLoginUsingValidCredentials</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserCanLogoutSuccessfullyFromDashBoard</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyWhetherUserIsAbleToAddDeliveryBoyList</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyWhetherUserIsAbleToEnterLocationInformations</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyWhetherUserIsAbleToLoginUsingCorrectUsernameAndIncorrectPassword</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyWhetherUserIsAbleToLoginUsingIncorrectUsernameAndcorrectPassword</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyWhetherUserIsAbleToLoginUsingInvalidCredentials</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
                 <span class="method-in-group-name">verifyWhetherUserIsAbleToSave</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyWhetherUserIsAbleToSaveInformationsOnAdminUser</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyWhetherUserIsAbleToUploadFileOnCategoryPage</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -199,16 +474,56 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(11);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyWhetherUserIsAbleToSave')
-data.setCell(0, 2, 'testscript.ManageNewsTest')
-data.setCell(0, 3, 3363);
+data.setCell(0, 1, 'verifyWhetherUserIsAbleToUploadFileOnCategoryPage')
+data.setCell(0, 2, 'testscript.ManageCategoryTest')
+data.setCell(0, 3, 8652);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyWhetherUserIsAbleToAddDeliveryBoyList')
+data.setCell(1, 2, 'testscript.ManageDeliveryBoyTest')
+data.setCell(1, 3, 2695);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyWhetherUserIsAbleToUploadFileOnCategoryPage')
+data.setCell(2, 2, 'testscript.ManageCategoryTest')
+data.setCell(2, 3, 2543);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyWhetherUserIsAbleToEnterLocationInformations')
+data.setCell(3, 2, 'testscript.ManageLocationTest')
+data.setCell(3, 3, 2309);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyWhetherUserIsAbleToSaveInformationsOnAdminUser')
+data.setCell(4, 2, 'testscript.AdminUserTest')
+data.setCell(4, 3, 1856);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyWhetherUserIsAbleToSave')
+data.setCell(5, 2, 'testscript.ManageNewsTest')
+data.setCell(5, 3, 1710);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyTheUserIsAbleToLoginUsingValidCredentials')
+data.setCell(6, 2, 'testscript.LoginTest')
+data.setCell(6, 3, 1604);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyUserCanLogoutSuccessfullyFromDashBoard')
+data.setCell(7, 2, 'testscript.LogOutTest')
+data.setCell(7, 3, 982);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyWhetherUserIsAbleToLoginUsingInvalidCredentials')
+data.setCell(8, 2, 'testscript.LoginTest')
+data.setCell(8, 3, 620);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyWhetherUserIsAbleToLoginUsingIncorrectUsernameAndcorrectPassword')
+data.setCell(9, 2, 'testscript.LoginTest')
+data.setCell(9, 3, 501);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyWhetherUserIsAbleToLoginUsingCorrectUsernameAndIncorrectPassword')
+data.setCell(10, 2, 'testscript.LoginTest')
+data.setCell(10, 3, 444);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 23 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -234,18 +549,156 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testscript.ManageNewsTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testscript.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initializeBrowser(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <span class="method-name">verifyTheUserIsAbleToLoginUsingValidCredentials</span>
+                <span class="method-start">2202 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyTheUserIsAbleToLoginUsingValidCredentials status=SUCCESS method=LoginTest.ver...)</span>
+                <span class="method-start">3819 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeBrowser(chrome)</span>
+                <span class="method-start">3989 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyWhetherUserIsAbleToLoginUsingCorrectUsernameAndIncorrectPassword</span>
+                <span class="method-start">5577 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyWhetherUserIsAbleToLoginUsingCorrectUsernameAndIncorrectPassword status=SUCCE...)</span>
+                <span class="method-start">6022 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeBrowser(chrome)</span>
+                <span class="method-start">6188 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyWhetherUserIsAbleToLoginUsingIncorrectUsernameAndcorrectPassword</span>
+                <span class="method-start">7808 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyWhetherUserIsAbleToLoginUsingIncorrectUsernameAndcorrectPassword status=SUCCE...)</span>
+                <span class="method-start">8312 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeBrowser(chrome)</span>
+                <span class="method-start">8465 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyWhetherUserIsAbleToLoginUsingInvalidCredentials</span>
+                <span class="method-start">10158 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyWhetherUserIsAbleToLoginUsingInvalidCredentials status=SUCCESS method=LoginTe...)</span>
+                <span class="method-start">10780 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscript.LogOutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeBrowser(chrome)</span>
+                <span class="method-start">10951 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserCanLogoutSuccessfullyFromDashBoard</span>
+                <span class="method-start">12688 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyUserCanLogoutSuccessfullyFromDashBoard status=SUCCESS method=LogOutTest.verif...)</span>
+                <span class="method-start">13671 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscript.ManageCategoryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeBrowser(chrome)</span>
+                <span class="method-start">13899 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyWhetherUserIsAbleToUploadFileOnCategoryPage</span>
+                <span class="method-start">15610 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyWhetherUserIsAbleToUploadFileOnCategoryPage status=SKIP method=ManageCategory...)</span>
+                <span class="method-start">24269 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeBrowser(chrome)</span>
+                <span class="method-start">24442 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyWhetherUserIsAbleToUploadFileOnCategoryPage</span>
+                <span class="method-start">25964 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyWhetherUserIsAbleToUploadFileOnCategoryPage status=SUCCESS method=ManageCateg...)</span>
+                <span class="method-start">28507 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscript.ManageDeliveryBoyTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeBrowser(chrome)</span>
+                <span class="method-start">28662 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyWhetherUserIsAbleToAddDeliveryBoyList</span>
+                <span class="method-start">30338 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyWhetherUserIsAbleToAddDeliveryBoyList status=SUCCESS method=ManageDeliveryBoy...)</span>
+                <span class="method-start">33034 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscript.ManageLocationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeBrowser(chrome)</span>
+                <span class="method-start">33182 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyWhetherUserIsAbleToEnterLocationInformations</span>
+                <span class="method-start">34885 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyWhetherUserIsAbleToEnterLocationInformations status=SUCCESS method=ManageLoca...)</span>
+                <span class="method-start">37202 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscript.AdminUserTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeBrowser(chrome)</span>
+                <span class="method-start">37366 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyWhetherUserIsAbleToSaveInformationsOnAdminUser</span>
+                <span class="method-start">39034 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyWhetherUserIsAbleToSaveInformationsOnAdminUser status=SUCCESS method=AdminUse...)</span>
+                <span class="method-start">40891 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscript.ManageNewsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeBrowser(chrome)</span>
+                <span class="method-start">41080 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
                 <span class="method-name">verifyWhetherUserIsAbleToSave</span>
-                <span class="method-start">2236 ms</span>
+                <span class="method-start">42719 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">browserQuit([TestResult name=verifyWhetherUserIsAbleToSave status=SUCCESS method=ManageNewsTest.verifyWhetherUse...)</span>
-                <span class="method-start">5605 ms</span>
+                <span class="method-start">44430 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

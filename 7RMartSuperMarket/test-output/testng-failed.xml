@@ -7,13 +7,13 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testscript.ManageNewsTest">
+      <class name="testscript.ManageCategoryTest">
         <methods>
           <include name="initializeBrowser"/>
-          <include name="verifyWhetherUserIsAbleToSave"/>
           <include name="browserQuit"/>
+          <include name="verifyWhetherUserIsAbleToUploadFileOnCategoryPage"/>
         </methods>
-      </class> <!-- testscript.ManageNewsTest -->
+      </class> <!-- testscript.ManageCategoryTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

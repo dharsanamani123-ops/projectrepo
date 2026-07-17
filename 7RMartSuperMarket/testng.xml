@@ -8,12 +8,12 @@
   <test thread-count="5" name="Test">
   <parameter name="browser" value="chrome"></parameter>
     <classes>
-       <!--class name="testscript.LoginTest"/>
+       <class name="testscript.LoginTest"/>
       <class name="testscript.LogOutTest"/>
       <class name="testscript.ManageCategoryTest"/>
       <class name="testscript.ManageDeliveryBoyTest"/>
       <class name="testscript.ManageLocationTest"/>
-       <class name="testscript.AdminUserTest"/-->
+       <class name="testscript.AdminUserTest"/>
          <class name="testscript.ManageNewsTest"/>
     </classes>
   </test> <!-- Test -->

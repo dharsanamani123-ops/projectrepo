@@ -9,8 +9,8 @@ import utilities.PageUtility;
 
 public class ManageLocationPage {
 	public WebDriver driver;
-	@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/list-location' and @class='small-box-footer']")
-	WebElement locationMoreInfo;
+	/*@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/list-location' and @class='small-box-footer']")
+	WebElement locationMoreInfo;*/
 	@FindBy(xpath = "//a[@onclick='click_button(1)']")
 	WebElement newbutton;
 	@FindBy(xpath = "//select[@id='country_id']")
@@ -31,34 +31,40 @@ public class ManageLocationPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void locationMoreInfo() {
+	/*public void locationMoreInfo() {
 		locationMoreInfo.click();
-	}
+	}*/
 
-	public void newbutton() {
+	public ManageLocationPage newbutton() {
 		newbutton.click();
+		return this;
 	}
 
-	public void country(String countryname) {
+	public ManageLocationPage country(String countryname) {
 		PageUtility utility = new PageUtility();
 		utility.dropDownVisibleText(country, countryname);
+		return this;
 	}
 
-	public void state(String statename) {
+	public ManageLocationPage state(String statename) {
 		PageUtility utility = new PageUtility();
 		utility.dropDownVisibleText(state, statename);
+		return this;
 	}
 
-	public void location(String locationname) {
+	public ManageLocationPage location(String locationname) {
 		location.sendKeys(locationname);
+		return this;
 	}
 
-	public void charge(int chargeamount) {
+	public ManageLocationPage charge(int chargeamount) {
 		charge.sendKeys(String.valueOf(chargeamount));
+		return this;
 	}
 
-	public void save() {
+	public ManageLocationPage save() {
 		save.click();
+		return this;
 	}
 
 	public boolean isAlertDisplayed() {

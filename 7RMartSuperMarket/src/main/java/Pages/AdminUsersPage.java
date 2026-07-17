@@ -11,8 +11,8 @@ import utilities.PageUtility;
 public class AdminUsersPage {
 	public WebDriver driver;
 
-	@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin' and  @class='small-box-footer']")
-	WebElement moreinfo;
+	/*@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin' and  @class='small-box-footer']")
+	WebElement adminmoreinfo;*/
 	@FindBy(xpath = "(//a[@href='javascript:void(0)'])[1]")
 	WebElement newbutton;
 	@FindBy(xpath = "//input[@id='username']")
@@ -30,24 +30,29 @@ public class AdminUsersPage {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	public void clickAdminMoreInfo() {
-		moreinfo.click();
-	}
-	public void clickNewButton() {
+	/*public void clickAdminMoreInfo() {
+		adminmoreinfo.click();
+	}*/
+	public AdminUsersPage clickNewButton() {
 		newbutton.click();
+		return this;
 	}
-	public void username(String adminusername) {
+	public AdminUsersPage username(String adminusername) {
 		username.sendKeys(adminusername);
+		return this;
 	}
-	public void password(String adminpassword) {
+	public AdminUsersPage password(String adminpassword) {
 		password.sendKeys(adminpassword);
+		return this;
 	}
-	public void selectUserType(String usertypeValue) {
+	public AdminUsersPage selectUserType(String usertypeValue) {
 		PageUtility utility = new PageUtility();
 		utility.dropDownVisibleText(usertype, usertypeValue);
+		return this;
 	}
-	public void save() {
+	public AdminUsersPage save() {
 		save.click();
+		return this;
 	}
 	public boolean isAlertDisplayed() {
 		return alertpage.isDisplayed();
